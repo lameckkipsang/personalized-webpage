@@ -17,4 +17,6 @@ function showContent(){
     document.getElementById("main-desc").style.display = "none";
     document.getElementById("output-section").style.display = "block";
     document.getElementById("greeting").innerHTML = `Hello, ${name}!`;    
+    let ageInMonths = calculateMonths(age);
+    document.getElementById("months-text").innerHTML = `You are ${ageInMonths} months old.`;
 }
