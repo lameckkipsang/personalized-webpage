@@ -34,3 +34,13 @@ function showContent(){
     document.getElementById("quotes-area").innerHTML = quoteHTML;
 }
 showContent();
+function resetData (){
+    localStorage.removeItem("savedName");
+    localStorage.removeItem("savedAge");
+    document.getElementById("name").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("output-section").style.display = "none";
+    document.getElementById("hero-section").style.display = "block";
+    document.getElementById("main-title").style.display = "block";
+    document.getElementById("main-desc").style.display = "block";
+}
