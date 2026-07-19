@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Welcome To Your Personalized Webpage</h1>
+    <p>Please enter your details to personalize your experience.</p>
+    <div id="hero-section">
+        <form id="user-details">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Enter Your Name Here">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required min="1" placeholder="Enter Your Age Here">
+            <button onclick="saveData()">Submit</button>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
