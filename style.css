@@ -50,3 +50,10 @@ button {
 button:hover {
     background-color: #1d4ed8;
 }
+#quotes-area p {
+    font-style: italic;
+    color: #4b5563;
+    border-left: 3px solid #2563eb;
+    padding-left: 10px;
+    text-align: left;
+}
