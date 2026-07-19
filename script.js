@@ -19,4 +19,9 @@ function showContent(){
     document.getElementById("greeting").innerHTML = `Hello, ${name}!`;    
     let ageInMonths = calculateMonths(age);
     document.getElementById("months-text").innerHTML = `You are ${ageInMonths} months old.`;
+    if (age >= 18) {
+        document.getElementById("adult-text").innerHTML = "You are over 18. You can access adult content.";
+    } else {
+        document.getElementById("adult-text").innerHTML = "You are under 18. You are too young for adult content.";
+    }
 }
