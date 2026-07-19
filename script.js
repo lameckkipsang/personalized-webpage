@@ -5,6 +5,9 @@ function calculateMonths(years) {
 function saveData() {
     let userName = document.getElementById("name").value;
     let userAge = document.getElementById("age").value;
+    localStorage.setItem("savedName", userName);
+    localStorage.setItem("savedAge", userAge);
+    showContent();
 }
 function showContent(){
     let name = localStorage.getItem("savedName");
@@ -24,4 +27,10 @@ function showContent(){
     } else {
         document.getElementById("adult-text").innerHTML = "You are under 18. You are too young for adult content.";
     }
+    let quoteHTML = "";
+    for (let i = 0; i < 5; i++) {
+        quoteHTML = quoteHTML + "<p>Keep pushing forward! You can do it!</p>";
+    }
+    document.getElementById("quotes-area").innerHTML = quoteHTML;
 }
+showContent();
